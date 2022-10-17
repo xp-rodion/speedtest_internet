@@ -35,6 +35,7 @@ def calculate_by_speed(num):
     else:
         return "Error"
 
+
 def return_speed_information(calc_info) -> None:
         if type(calc_info) == tuple:
             print('Computed Internet Values: ')
@@ -43,8 +44,13 @@ def return_speed_information(calc_info) -> None:
             print(f'Your ping --> {calc_info[2]} ms')
         else:
             print("Please, check your data option")
+
+            
+
 def main():
     script_information()
     return_speed_information(calculate_by_speed(input('Enter the option: ')))
+
+
 if __name__ == '__main__':
     main()
