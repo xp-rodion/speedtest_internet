@@ -40,7 +40,7 @@ def return_speed_information(calc_info) -> None:
         if type(calc_info) == tuple:
             print('Computed Internet Values: ')
             print(f'Downloads speed --> {calc_info[0]} {calc_info[3]}/s')
-            print(f'Uploads speed--> {calc_info[1]} {calc_info[3]}/s')
+            print(f'Uploads speed --> {calc_info[1]} {calc_info[3]}/s')
             print(f'Your ping --> {calc_info[2]} ms')
         else:
             print("Please, check your data option")
